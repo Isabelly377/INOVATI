@@ -1,0 +1,158 @@
+/* Resetando margens e padding para garantir uma base limpa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #1e2a47;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e2a47;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul.menu {
+    list-style: none;
+    display: flex;
+}
+
+header ul.menu li {
+    margin-left: 20px;
+}
+
+header ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Nossa Imagem */
+.imagem-secao {
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.imagem-secao h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.imagem-secao p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção Design do Logo */
+.logo-secao {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.logo-secao h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.logo-secao p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.logo-imagem img {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul.social-media li {
+    margin: 0 15px;
+}
+
+footer ul.social-media li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer ul.social-media li a:hover {
+    color: #00bbd400;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul.menu {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    header ul.menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .imagem-secao h1 {
+        font-size: 2rem;
+    }
+
+    .imagem-secao p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .logo-secao h2 {
+        font-size: 1.8rem;
+    }
+
+    .logo-secao p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <!-- Link para o arquivo de estilo CSS -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="contact-form">
+      <h2>Entre em Contato</h2>
+
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="status"></p>
+  </div>
+
+  <!-- Script EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("rmaUBCk0Key39uG-H"); // Substitua com seu User ID
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      const serviceID = "service_x3fhml9"; // Substitua com seu Service ID
+      const templateID = "template_3k4urlr"; // Substitua com seu Template ID
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          document.getElementById("status").innerHTML = "Mensagem enviada com sucesso!";
+          document.getElementById("status").classList.remove("error");
+          document.getElementById("status").classList.add("success");
+          this.reset(); 
+        }, (err) => {
+          document.getElementById("status").innerHTML = "Erro ao enviar: " + JSON.stringify(err);
+          document.getElementById("status").classList.remove("success");
+          document.getElementById("status").classList.add("error");
+        });
+    });
+  </script>
+</body>
+</html>

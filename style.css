@@ -1,0 +1,111 @@
+/* Resetando margens e paddings para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo e fundo tecnológico - ocupa toda a tela */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.example.com/imagem-fundo-tecnologia.jpg'); /* Substitua com a URL da sua imagem */
+    background-size: cover; /* A imagem vai cobrir a tela inteira */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem de fundo fica fixa durante o rolar da página */
+    height: 100vh; /* 100% da altura da tela */
+    margin: 0; /* Retira a margem padrão do body */
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container que vai centralizar o formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+}
+
+/* Estilo do formulário */
+.form-container {
+    background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente para o formulário */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px; /* Limita a largura máxima do formulário */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Título do formulário */
+h1 {
+    color: #00bcd4; /* Cor futurista */
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos labels e inputs */
+label {
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 1em;
+    color: #fff;
+    background: #333;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #00bcd4; /* Efeito de foco */
+    background-color: #222;
+}
+
+/* Estilo do botão de envio */
+button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0097a7; /* Efeito hover */
+}
+
+/* Ajustes para telas pequenas (responsividade) */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 20px; /* Reduzindo o padding para telas pequenas */
+        width: 90%; /* Aumenta a largura do formulário para ocupar mais espaço */
+    }
+
+    h1 {
+        font-size: 1.4em; /* Reduzindo o tamanho da fonte para cabeçalhos */
+    }
+
+    label {
+        font-size: 1em; /* Ajustando o tamanho da fonte dos labels */
+    }
+
+    input, button {
+        font-size: 1em; /* Ajustando o tamanho da fonte dos campos de input e do botão */
+        padding: 8px; /* Ajustando o padding dos campos */
+    }
+}

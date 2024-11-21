@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;  /* Define o comportamento de rolagem suave ao clicar em links de âncoras */
+}
+  
+#section1 {  /* Seleciona o elemento com o ID 'section1' */
+  height: 00px;  /* Define a altura da seção como 700 pixels */
+  background-color: #f5fafdd8;  /* Define a cor de fundo da seção usando um código hexadecimal */
+  width: 1200px;  /* Define a largura da seção como 1200 pixels */
+  border-radius: 60px;  /* Adiciona bordas arredondadas de 5 pixels nos cantos da seção */
+  box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.599);  /* Adiciona uma sombra ao redor da seção com deslocamento e opacidade */
+}
+  
+#section2 {  /* Seleciona o elemento com o ID 'section2' */
+  height: 700px;  /* Define a altura da seção como 700 pixels */
+  background-color: #a0b5aeaf;  /* Define a cor de fundo da seção usando um código hexadecimal */
+  width: 1200px;  /* Define a largura da seção como 1200 pixels */
+  border-radius: 5px;  /* Adiciona bordas arredondadas de 5 pixels nos cantos da seção */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);  /* Adiciona uma sombra ao redor da seção com deslocamento e opacidade */
+}
+
+#section3 {  /* Seleciona o elemento com o ID 'section3' */
+  height: 700px;  /* Define a altura da seção como 700 pixels */
+  background-color: #88c4e7;  /* Define a cor de fundo da seção usando um código hexadecimal */
+  width: 1200px;  /* Define a largura da seção como 1200 pixels */
+  border-radius: 5px;  /* Adiciona bordas arredondadas de 5 pixels nos cantos da seção */
+}
+  
+#section4 {  /* Seleciona o elemento com o ID 'section3' */
+  height: 700px;  /* Define a altura da seção como 700 pixels */
+  background-color: #000a10;  /* Define a cor de fundo da seção usando um código hexadecimal */
+  width: 1200px;  /* Define a largura da seção como 1200 pixels */
+  border-radius: 5px;  /* Adiciona bordas arredondadas de 5 pixels nos cantos da seção */
+}
+
+
+.div2 {  /* Seleciona todos os elementos com a classe 'div2' */
+  height: 500px;  /* Define a altura da div como 500 pixels */
+  background-color: #0aceffdc;  /* Define a cor de fundo da div usando um código hexadecimal */
+  width: 800px;  /* Define a largura da div como 800 pixels */
+  text-align: center;  /* Justifica o texto dentro da div */
+  color: rgb(17, 6, 1);  /* Define a cor do texto usando valores RGB */
+  margin-right: 10%;  /* Adiciona uma margem à direita de 10% */
+  margin-left: 10%;  /* Adiciona uma margem à esquerda de 10% */
+  font-family: Arial, Helvetica, sans-serif;  /* Define a fonte do texto como 'urbanist' */
+  border-radius: 10px;  /* Adiciona bordas arredondadas de 10 pixels nos cantos da div */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);  /* Adiciona uma sombra ao redor da div com deslocamento e opacidade */
+  font-size: 20px;
+}
+
+.div3 {  /* Seleciona todos os elementos com a classe 'div3' */
+  height: 500px;  /* Define a altura da div como 500 pixels */
+  background-color: #063745dc;  /* Define a cor de fundo da div usando um código hexadecimal */
+  width: 800px;  /* Define a largura da div como 800 pixels */
+  text-align: center;  /* Alinha o texto à direita dentro da div */
+  color: rgb(203, 234, 24);  /* Define a cor do texto usando valores RGB */
+  margin-right: 10%;  /* Adiciona uma margem à direita de 10% */
+  margin-left: 10%;  /* Adiciona uma margem à esquerda de 10% */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  /* Define a fonte do texto com uma lista de opções */
+  border-radius: 10px;  /* Adiciona bordas arredondadas de 10 pixels nos cantos da div */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);  /* Adiciona uma sombra ao redor da div com deslocamento e opacidade */
+}
+
+  
+a {  /* Seleciona todos os elementos de link na página */
+  text-decoration: none;  /* Remove o sublinhado padrão dos links */
+  background-color: rgb(1, 24, 155);  /* Define a cor de fundo dos links usando valores RGB */
+  color: whitesmoke;  /* Define a cor do texto dos links como 'whitesmoke' */
+  border-radius: 5px;  /* Adiciona bordas arredondadas de 4 pixels aos links */
+  font-size: 18px;  /* Define o tamanho da fonte dos links como 18 pixels */
+  padding: 10px;
+}
+
+  
+h2 {  /* Seleciona todos os elementos <h2> na página */
+  color: rgb(1, 36, 38);  /* Define a cor do texto dos elementos <h2> usando valores RGB */
+}
+

@@ -1,0 +1,97 @@
+/* Estilo para a imagem com gradiente */
+.imagem-gradiente-horizontal {
+    position: relative;
+    width: 100%; 
+    height: 500px;
+    background-image: url('imagemm.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin-top: 0px;
+}
+
+.imagem-gradiente-horizontal:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7) 90%);
+    pointer-events: none;
+}
+
+/* Estilo para o título h1 dentro da imagem */
+.imagem-gradiente-horizontal h1 {
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    margin: 20px;
+    text-align: left;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    animation: moverTextoImagem 8s ease-in-out infinite; /* Animação do texto da imagem */
+}
+
+/* Estilo para o título h2 dentro da imagem */
+.imagem-gradiente-horizontal h2 {
+    font-size: 33px;
+    font-family: Verdana, sans-serif;
+    margin: 15px;
+    text-align: left;
+    padding-top: 0px;
+    color: rgba(255, 255, 255, 1.0);
+    font-style: italic;
+    animation: moverTextoImagem 10s ease-in-out infinite; /* Animação do texto da imagem */
+}
+
+/* Animação do movimento do texto da imagem */
+@keyframes moverTextoImagem {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para o conteúdo de texto */
+.texto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Estilo para o título h1 dentro da classe .texto */
+.texto h1 {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    margin: 20px;
+    color: #333;
+    position: relative;
+    top: -20px;  /* Move o texto para cima */
+    
+}
+
+/* Estilo para o título h2 dentro da classe .texto */
+.texto h2 {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+    color: #0d163a;
+    line-height: 1.6;
+    position: relative;
+    top: -15px;  /* Move o texto para cima */
+}
+
+
+
+/* Cor de fundo da página */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}

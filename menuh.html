@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>MENU HORI</title>
+  <style type="text/css">
+    /* Estilos para os links */
+    a:link, a:visited { 
+      text-decoration: none; 
+      color: rgb(255, 255, 255); 
+      outline: none; /* Remove contorno ao redor dos links */
+      border: none; /* Remove qualquer borda ao redor dos links */
+    }
+    a:hover { 
+      color: #2554d4; /* Cor mais visível ao passar o mouse */
+    }
+    a:active { 
+      color: rgba(0, 0, 0, 0.733); /* Cor ao clicar */
+    }
+
+    /* Estilo para o corpo da página */
+    body { 
+      margin: 0;
+      padding: 0;
+      background-color: #3b577e; /* Cor de fundo do site */ 
+      display: flex;
+      justify-content: flex-end; /* Alinha o menu à direita */
+      align-items: center;     /* Centraliza o menu verticalmente */
+      height: 100vh;
+      overflow: hidden; /* Remove a barra de rolagem */
+    }
+
+    /* Estilo para o menu */
+    .menu {
+      display: flex;
+      justify-content: flex-end; /* Alinha o menu à direita */
+      align-items: center;
+      gap: 20px;
+      font-size: 1.5em;
+      font-family: Arial, sans-serif;
+      padding: 20px; /* Espaço ao redor do menu */
+      flex-wrap: wrap; /* Permite que o menu ajuste em telas menores */
+    }
+
+    /* Responsividade: ajuste da fonte e espaçamento em telas menores */
+    @media (max-width: 600px) {
+      .menu {
+        font-size: 1.2em; /* Diminui o tamanho da fonte em telas pequenas */
+        gap: 15px; /* Reduz o espaçamento entre os itens */
+      }
+    }
+    
+    /* Estilo para o HTML (para garantir que a rolagem também seja removida) */
+    html {
+      overflow: hidden; /* Impede a rolagem na página */
+      height: 100%; /* Garante que o html ocupe toda a altura da tela */
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="corpo.html" target="CORPO1">HOME</a>
+    <a href="serviços.html" target="CORPO1">SERVIÇOS</a>
+    <a href="contatos.html" target="CORPO1">CONTATOS</a>
+    <a href="sobre.html" target="CORPO1">SOBRE</a>
+    <a href="formulário.html" target="CORPO1">CADASTRO</a>
+  </div>
+</body>
+</html>
